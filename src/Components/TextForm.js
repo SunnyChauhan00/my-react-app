@@ -57,12 +57,33 @@ import React, {useState} from 'react'
          {/* value k liye props ka use kiya({text}) */}
         <textarea className="form-control" value= {text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark' ? '#042743' : 'white', color: props.mode === 'dark' ? 'white' : '#042743'}} id="my-Box" rows="8"></textarea> 
         </div>
-        <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>  
+        {/* <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>  
         <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lowercase</button>  
         <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear Text</button>  
         <button className="btn btn-primary mx-2" onClick={handleCopyClick}>Copy Text</button>  
-        <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>  
+        <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>   */}
         {/* <button className="btn btn-primary mx-1" onClick={handleDarkMode}>Dark Mode</button>   */}
+        <div className="d-flex flex-wrap gap-2">
+  <button className="btn btn-primary" onClick={handleUpClick}>
+    Convert to Uppercase
+  </button>
+
+  <button className="btn btn-primary" onClick={handleLoClick}>
+    Convert to Lowercase
+  </button>
+
+  <button className="btn btn-primary" onClick={handleClearClick}>
+    Clear Text
+  </button>
+
+  <button className="btn btn-primary" onClick={handleCopyClick}>
+    Copy Text
+  </button>
+
+  <button className="btn btn-primary" onClick={handleExtraSpaces}>
+    Remove Extra Spaces
+  </button>
+</div>
     </div>
     <div className="container my-2" style={{color: props.mode === 'dark' ? 'white' : '#042743'}}>
       <h2>Your Text Summary</h2>
