@@ -20,7 +20,7 @@ import React, {useState} from 'react'
     const handleOnChange =(event) =>{
       // console.log("on change");
       setText(event.target.value);
-      props.showAlert("Text changed!", "success");
+      // props.showAlert("Text changed!", "success");
     }
     
     const handleCopyClick =() =>{
@@ -57,11 +57,11 @@ import React, {useState} from 'react'
          {/* value k liye props ka use kiya({text}) */}
         <textarea className="form-control" value= {text} onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark' ? '#042743' : 'white', color: props.mode === 'dark' ? 'white' : '#042743'}} id="my-Box" rows="8"></textarea> 
         </div>
-        <button className="btn btn-primary my-1" onClick={handleUpClick}>Convert to Uppercase</button>  
+        <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>  
         <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lowercase</button>  
-        <button className="btn btn-primary mx-1" onClick={handleClearClick}>Clear Text</button>  
-        <button className="btn btn-primary mx-1" onClick={handleCopyClick}>Copy Text</button>  
-        <button className="btn btn-primary mx-1" onClick={handleExtraSpaces}>Remove Extra Spaces</button>  
+        <button className="btn btn-primary mx-2" onClick={handleClearClick}>Clear Text</button>  
+        <button className="btn btn-primary mx-2" onClick={handleCopyClick}>Copy Text</button>  
+        <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>  
         {/* <button className="btn btn-primary mx-1" onClick={handleDarkMode}>Dark Mode</button>   */}
     </div>
     <div className="container my-2" style={{color: props.mode === 'dark' ? 'white' : '#042743'}}>
