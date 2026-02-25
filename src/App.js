@@ -52,7 +52,7 @@ function App() {
      {/* react mein my-3(margin Y mein 3 ki) ek class hoti hai jo kuch css apply karti hai  */}
      <div className="container my-3">
      <Routes>
-        <Route exact path="/about" element={<About />}/>
+        <Route exact path="/about" element={<About mode={mode} />} />
         <Route exact path="/" element={<TextForm showAlert={showAlert} heading = "Enter the text to analyze below" mode={mode}/>}/>
       </Routes>
      </div>
